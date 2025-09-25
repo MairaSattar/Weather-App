@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="'UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="'A simple weather app that will allow you to see the weather of any desired city.">
+        <title>Weather App</title>
+
+        <!-- Font Awesome Link-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+
+         <!-- Google Font Links-->
+
+         <!-- Lato -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+        <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">   
+
+         <link rel="stylesheet" href="styles.css">
+
+         <!-- weather icons are from openweathermap.org and weather detail icons are from fontawesome -->
+    </head>
+    <body>
+        <div class="card">
+            <nav>
+                 <a href="bookmarked.html"><i class="fa-solid fa-bars"></i></a>
+
+                 <!-- search bar -->
+                 <div class="search">
+                    <input type="text" placeholder="enter city name" spellcheck="false">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                 </div>
+
+                 <button><i id="bookmark" class="fa-regular fa-bookmark"></i></button>
+                 <button><i id="bookmarked" class="fa-solid fa-bookmark"></i></button>
+            </nav>
+            
+            <!-- City name and weather details -->
+            <div class="weather">
+                <h1 class="city"></h1>
+                <div class="main-weather">
+                  <img src="http://openweathermap.org/img/wn/01d@2x.png" class="weather-icon"> 
+                  <div>
+                    <h2 class="temp"></h2>
+                    <p class="weather-type"></p>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Weather details in the four boxes-->
+            <div class="weather-details">
+                <div class="rain-vol">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="rain"></p>
+                </div>
+                <div class="wind-speed">
+                    <i class="fa-solid fa-wind"></i>
+                    <p class="wind"></p>
+                </div>
+                <div class="humidity-percent">
+                    <img src="images/humidity.PNG">
+                    <p class="humidity"></p>
+                </div>
+                <div class="felt-temp">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <p class="feelsLike"></p>
+                </div>
+            </div>
+
+            <!-- Hourly weather -->
+            <div id="hourly">
+                <div class="handle" id="handle"></div>
+
+                <div id="hourly-content"></div>
+
+            </div>
+        </div>
+ 
+
+        <script src="script.js"></script>
+
+
+    </body>
+</html>
