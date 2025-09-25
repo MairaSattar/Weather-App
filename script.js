@@ -50,7 +50,7 @@ async function checkWeather(city) {
     } else if (data.weather[0].main == "Thunderstorm") {
         weatherIcon.src = "http://openweathermap.org/img/wn/11d@2x.png";
     } else {
-        weatherIcon.src = "images/mist.PNG";
+        weatherIcon.src = "http://openweathermap.org/img/wn/50d@2x.png";
     }
 
     checkHourlyForecast(city);
